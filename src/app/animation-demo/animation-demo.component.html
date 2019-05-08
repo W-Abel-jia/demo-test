@@ -1,0 +1,27 @@
+<div [@stateChange]="isChange">
+  <p>
+    Angular学习笔记
+  </p>
+</div>
+
+<button nz-button (click)="handleChange('isRed')">改变为红色</button>
+<button nz-button (click)="handleChange('isYellow')">改变为黄色</button>
+<button nz-button (click)="handleChange('isGreen')">改变为绿色</button>
+
+
+<nz-divider [nzText]="'飞入飞出动画'"></nz-divider>
+<nz-row>
+  <button nz-button (click)="handleInOut()">按钮</button>
+  <button nz-button (click)="handleDisabled()">改变禁用动画</button>
+  禁用的状态：{{isDisabled}}
+</nz-row>
+<nz-row>
+
+  <nz-form-control nzSpan="10" nzOffset="7" [@.disabled]="isDisabled">
+    <div style="text-align: center" *ngIf="isInOut"
+         [@fly]="isInOut?'flyIn':'void'" (@fly.start)="handleFlyStart($event)">
+      <span>飞入飞出动画～</span>
+    </div>
+  </nz-form-control>
+</nz-row>
+

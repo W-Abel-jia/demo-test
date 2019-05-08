@@ -1,0 +1,15 @@
+<nz-row>
+  <nz-form-label nz-col nzOffset="3" [nzSpan]="3">
+    父组件
+  </nz-form-label>
+  <nz-form-control nz-col nzSpan="5">
+    <button nz-button (click)="parentEvent()">父组件的按钮</button>
+  </nz-form-control>
+</nz-row>
+<hr/>
+<nz-row>
+  <nz-col nzOffset="3">
+    <app-child-com></app-child-com>
+  </nz-col>
+</nz-row>
+
