@@ -11,9 +11,6 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { ParentComComponent } from './parent-com/parent-com.component';
 import { ChildComComponent } from './child-com/child-com.component';
-import { PopupComponent } from './popup/popup.component';
-import { InlineStyleComComponent } from './inline-style-com/inline-style-com.component';
-import { StyleComComponent } from './style-com/style-com.component';
 import { AnimationDemoComponent } from './animation-demo/animation-demo.component';
 
 registerLocaleData(zh);
@@ -23,9 +20,6 @@ registerLocaleData(zh);
     AppComponent,
     ParentComComponent,
     ChildComComponent,
-    PopupComponent,
-    InlineStyleComComponent,
-    StyleComComponent,
     AnimationDemoComponent
   ],
   imports: [
