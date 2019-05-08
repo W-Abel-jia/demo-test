@@ -7,7 +7,7 @@
 
 克隆本项目：
 ```bash
-https://github.com/W-Abel-jia/demo-test.git
+git clone https://github.com/W-Abel-jia/demo-test.git
 ```
 安装依赖：
 ```
