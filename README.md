@@ -17,3 +17,7 @@ npm install
 ```
 npm run start
 ```
+在浏览器中输入：
+```
+http://localhost:8090/
+```
