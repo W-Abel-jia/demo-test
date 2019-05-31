@@ -1,0 +1,8 @@
+<nz-divider [nzText]="'复杂动画序列'"></nz-divider>
+<button nz-button (click)="handleAddDemo()">增加demo</button>
+<div @pageAnimations>
+  <ul *ngFor="let demo of demos;let i = index">
+    <li class="demo">{{demo + i}}</li>
+  </ul>
+  <span *ngIf="demos.length %2 === 0" class="title">复杂动画序列demo</span>
+</div>

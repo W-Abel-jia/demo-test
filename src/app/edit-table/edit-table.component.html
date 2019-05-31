@@ -1,0 +1,29 @@
+<nz-content>
+  <nz-divider nzText="双击文字编辑，编辑完以后点输入框之外的显示"></nz-divider>
+  <nz-table #basicTable [nzData]="dataSet">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>
+        <ng-container *ngIf="data.status === 'edit'">
+          <input nz-input
+                 (blur)="handleBlur(data)"
+                 [(ngModel)]="data.name" [ngModelOptions]="{standalone: true}">
+        </ng-container>
+        <ng-container *ngIf="data.status === 'show'">
+          <span (dblclick)="handledblClick(data)">{{data.name}}</span>
+        </ng-container>
+      </td>
+      <td>{{data.age}}</td>
+      <td>{{data.address}}</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</nz-content>
+

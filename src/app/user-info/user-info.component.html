@@ -1,0 +1,21 @@
+<nz-divider [nzText]="'响应式表单'"></nz-divider>
+<nz-content>
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>
+      姓名
+    </nz-form-label>
+    <nz-form-control nzSpan="6" nz-col>
+      <input nz-input type="text" placeholder="请输入姓名~" [formControl]="nameFormControl">
+    </nz-form-control>
+  </nz-form-item>
+</nz-content>
+
+<nz-content>
+  <nz-row>
+    展示表单的值
+  </nz-row>
+  <nz-row>
+    {{nameFormControl.value | json }}
+  </nz-row>
+</nz-content>
+
