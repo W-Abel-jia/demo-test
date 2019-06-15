@@ -1,21 +1,90 @@
 <nz-divider [nzText]="'响应式表单'"></nz-divider>
 <nz-content>
-  <nz-form-item>
-    <nz-form-label nzSpan="3" nz-col>
-      姓名
-    </nz-form-label>
-    <nz-form-control nzSpan="6" nz-col>
-      <input nz-input type="text" placeholder="请输入姓名~" [formControl]="nameFormControl">
-    </nz-form-control>
-  </nz-form-item>
+  <form [formGroup]="validateForm" (ngSubmit)="handleSubmit()">
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>
+        姓名
+      </nz-form-label>
+      <nz-form-control nzSpan="6" nz-col>
+        <input nz-input type="text" placeholder="请输入姓名~" formControlName="name">
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>
+        年龄
+      </nz-form-label>
+      <nz-form-control nzSpan="6" nz-col>
+        <input nz-input type="text" placeholder="请输入年龄~" formControlName="age">
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>
+        Email
+      </nz-form-label>
+      <nz-form-control nzSpan="6" nz-col>
+        <input nz-input type="text" placeholder="请输入Email~" formControlName="email">
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>电话号码</nz-form-label>
+      <nz-form-control nzSpan="8" nz-col>
+        <nz-row formArrayName="phone"
+                *ngFor="let phone of phoneArray.controls;let phoneIndex = index">
+          <nz-form-control nzSpan="18" nz-col>
+            <input nz-input type="text" placeholder="请输入电话号码~" [formControlName]="phoneIndex">
+          </nz-form-control>
+          <nz-form-control nzOffset="1" nzSpan="3" nz-col>
+            <button nz-button (click)="removePhone(phoneIndex)">删除</button>
+          </nz-form-control>
+        </nz-row>
+      </nz-form-control>
+            <nz-form-control nzSpan="2">
+              <button nz-button (click)="addPhone()">增加</button>
+            </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>address</nz-form-label>
+      <nz-form-control formGroupName="address" nzSpan="18" nz-col>
+        <nz-row>
+          <nz-form-control nzSpan="8" nz-col>
+            <input nz-input formControlName="area" placeholder="请输入地区">
+          </nz-form-control>
+
+          <nz-form-control nzSpan="8" nz-col>
+            <input nz-input formControlName="street" placeholder="请输入街道">
+          </nz-form-control>
+
+          <nz-form-control nzSpan="8" nz-col>
+            <input nz-input formControlName="houseId" placeholder="请输入门牌号">
+          </nz-form-control>
+        </nz-row>
+
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <button type="submit" nz-button [disabled]="validateForm.invalid">提交表单</button>
+    </nz-form-item>
+  </form>
+
 </nz-content>
 
 <nz-content>
-  <nz-row>
-    展示表单的值
-  </nz-row>
-  <nz-row>
-    {{nameFormControl.value | json }}
-  </nz-row>
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>
+      展示表单的值
+    </nz-form-label>
+    <nz-form-control nzSpan="15" nz-col>
+      {{validateForm.value | json }}
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzOffset="3" nzSpan="6">
+      <button nz-button (click)="handleInitForm()">重置</button>
+      <button nz-button (click)="patchValue()">赋值</button>
+    </nz-form-control>
+  </nz-form-item>
 </nz-content>
-
