@@ -15,6 +15,7 @@ import {AnimationDemoComponent} from './animation-demo/animation-demo.component'
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {UserInfoComponent} from './user-info/user-info.component';
 import { EditTableComponent } from './edit-table/edit-table.component';
+import { FormNestedComponent } from './form-nested/form-nested.component';
 
 registerLocaleData(zh);
 
@@ -26,7 +27,8 @@ registerLocaleData(zh);
     AnimationDemoComponent,
     ComplexAnimationsComponent,
     UserInfoComponent,
-    EditTableComponent
+    EditTableComponent,
+    FormNestedComponent
   ],
   imports: [
     BrowserModule,
