@@ -1,0 +1,53 @@
+<nz-divider [nzText]="'动态修改响应式表单的校验器'"></nz-divider>
+<form nz-form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label nzSpan="4" nz-col>类别</nz-form-label>
+    <nz-form-control nzSpan="12" nz-col>
+      <nz-radio-group formControlName="category" (ngModelChange)="handleCategoryChange($event)">
+        <label nz-radio nzValue="name">name类别</label>
+        <label nz-radio nzValue="age">age类别</label>
+        <label nz-radio nzValue="address">地址类别</label>
+      </nz-radio-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzSpan="4" nz-col>name类别</nz-form-label>
+    <nz-form-control nzSpan="12" nz-col>
+      <input nz-input formControlName="name" name="name" placeholder="请输入name">
+      <nz-form-explain *ngIf="validateForm.get('name').dirty
+       && validateForm.get('name').hasError('required')">
+        必填选择不能为空
+      </nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzSpan="4" nz-col>age类别</nz-form-label>
+    <nz-form-control nzSpan="12" nz-col>
+      <input nz-input formControlName="age" name="age" placeholder="请输入age">
+      <nz-form-explain *ngIf="validateForm.get('age').dirty
+       && validateForm.get('age').hasError('required')">
+        必填选择不能为空
+      </nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzSpan="4" nz-col>地址类别</nz-form-label>
+    <nz-form-control nzSpan="12" nz-col>
+      <input nz-input formControlName="address" name="address" placeholder="请输入地址">
+      <nz-form-explain *ngIf="validateForm.get('address').dirty
+       && validateForm.get('address').hasError('required')">
+        必填选择不能为空
+      </nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzSpan="4" nz-col>表单是否有效</nz-form-label>
+    <nz-form-control nzSpan="12" nz-col>
+      {{validateForm.valid}}
+    </nz-form-control>
+  </nz-form-item>
+
+</form>

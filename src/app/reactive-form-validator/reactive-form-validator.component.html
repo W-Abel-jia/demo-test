@@ -1,0 +1,66 @@
+<nz-divider [nzText]="'响应式表单验证'"></nz-divider>
+
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>
+      姓名
+    </nz-form-label>
+    <nz-form-control nzSpan="7" nz-col>
+      <input nz-input type="text" placeholder="请输入" id="name" name="name" formControlName="name">
+      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      && validateForm.get('name').hasError('required')">必填项不能为空
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      && validateForm.get('name').hasError('maxlength')">最大长度32
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      && validateForm.get('name').hasError('minlength')">最小长度2
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      && validateForm.get('name').hasError('pattern')">只能输入英文或者数字
+      </nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>
+      年龄
+    </nz-form-label>
+    <nz-form-control nzSpan="7" nz-col>
+      <input nz-input type="text" placeholder="请输入" id="age" name="age" formControlName="age">
+      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      && validateForm.get('age').hasError('required')">必填项不能为空
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      && validateForm.get('age').hasError('max')">最大值不能超过100
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      && validateForm.get('age').hasError('min')">最小值不能小于0
+      </nz-form-explain>
+
+      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      && validateForm.get('age').hasError('pattern')">只能输入数字
+      </nz-form-explain>
+    </nz-form-control>
+  </nz-form-item>
+
+</form>
+
+<nz-content>
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>表单的值</nz-form-label>
+    <nz-form-control nzSpan="18" nz-col>{{validateForm.value | json}}</nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label nzSpan="3" nz-col>表单的状态</nz-form-label>
+    <nz-form-control nzSpan="18" nz-col>{{validateForm.status}}</nz-form-control>
+  </nz-form-item>
+
+</nz-content>

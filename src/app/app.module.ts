@@ -14,8 +14,12 @@ import {ChildComComponent} from './child-com/child-com.component';
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {UserInfoComponent} from './user-info/user-info.component';
-import { EditTableComponent } from './edit-table/edit-table.component';
-import { FormNestedComponent } from './form-nested/form-nested.component';
+import {EditTableComponent} from './edit-table/edit-table.component';
+import {FormNestedComponent} from './form-nested/form-nested.component';
+import {ReactiveFormValidatorComponent} from './reactive-form-validator/reactive-form-validator.component';
+import { ModifyValidatorComponent } from './modify-validator/modify-validator.component';
+import { ComponentNameComponent } from './component-name/component-name.component';
+// import { FormsValidatorComponent } from './public/forms-validator/forms-validator.component';
 
 registerLocaleData(zh);
 
@@ -28,7 +32,10 @@ registerLocaleData(zh);
     ComplexAnimationsComponent,
     UserInfoComponent,
     EditTableComponent,
-    FormNestedComponent
+    FormNestedComponent,
+    ReactiveFormValidatorComponent,
+    ModifyValidatorComponent,
+    ComponentNameComponent,
   ],
   imports: [
     BrowserModule,
