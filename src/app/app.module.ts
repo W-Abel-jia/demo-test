@@ -19,6 +19,7 @@ import {FormNestedComponent} from './form-nested/form-nested.component';
 import {ReactiveFormValidatorComponent} from './reactive-form-validator/reactive-form-validator.component';
 import { ModifyValidatorComponent } from './modify-validator/modify-validator.component';
 import { ComponentNameComponent } from './component-name/component-name.component';
+import { AsyncDemoComponent } from './async-demo/async-demo.component';
 // import { FormsValidatorComponent } from './public/forms-validator/forms-validator.component';
 
 registerLocaleData(zh);
@@ -36,6 +37,7 @@ registerLocaleData(zh);
     ReactiveFormValidatorComponent,
     ModifyValidatorComponent,
     ComponentNameComponent,
+    AsyncDemoComponent,
   ],
   imports: [
     BrowserModule,

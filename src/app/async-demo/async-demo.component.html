@@ -1,0 +1,21 @@
+<nz-content>
+  <nz-divider nzText="异步校验器"></nz-divider>
+  <form nz-form [formGroup]="validateForm">
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col nzRequired>demo姓名</nz-form-label>
+      <nz-form-control nzSpan="6" nz-col>
+        <label>
+          <input nz-input formControlName="demoName" name="demoName" type="text">
+        </label>
+        <nz-form-explain *ngIf="validateForm.get('demoName').dirty
+                            && validateForm.get('demoName').pending">
+          正在校验中...
+        </nz-form-explain>
+        <nz-form-explain *ngIf="validateForm.get('demoName').dirty
+                            && validateForm.get('demoName').hasError('demoNameValidator')">
+          填写内容重复，请重新填写...
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</nz-content>
