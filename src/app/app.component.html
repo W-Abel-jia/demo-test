@@ -1,12 +1,12 @@
 <nz-layout>
-  <nz-header>
-    <div class="logo"><span routerLink="/introduce">Demo-Test W先生的Blog的练手场</span></div>
+  <nz-header class="header">
+    <div><span routerLink="/introduce">Demo-Test W先生的Blog的练手场</span></div>
   </nz-header>
   <nz-layout>
     <nz-sider [nzWidth]="200" style="background:#fff">
       <app-demo-sider></app-demo-sider>
     </nz-sider>
-    <nz-layout style="padding:8px">
+    <nz-layout>
       <nz-content class="routerContent">
         <router-outlet></router-outlet>
       </nz-content>
