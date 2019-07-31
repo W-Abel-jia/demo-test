@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {DemoNameAsyncValidatorService} from '../public/demo-name-async-validator.service';
+import {DemoNameAsyncValidatorService} from '../../public/demo-name-async-validator.service';
 
 @Component({
   selector: 'app-async-demo',

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {HttpServiceService} from '../public/http-service.service';
+import {HttpServiceService} from '../../public/http-service.service';
 
 
 @Component({

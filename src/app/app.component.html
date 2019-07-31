@@ -1,26 +1,15 @@
-<!--<router-outlet></router-outlet>-->
-
-<!--动画-->
-<!--<app-animation-demo></app-animation-demo>-->
-<!--<app-complex-animations></app-complex-animations>-->
-
-<!--可编辑的table的Demo-->
-<!--<app-edit-table></app-edit-table>-->
-
-<!--响应式表单 FormGroup FormArray-->
-<!--<app-user-info></app-user-info>-->
-
-<!--多层级的表单嵌套-->
-<!--<app-form-nested></app-form-nested>-->
-
-<!--响应式表单的验证-->
-<!--<app-reactive-form-validator></app-reactive-form-validator>-->
-
-<!--动态修改响应式表单的校验器-->
-<!--<app-modify-validator></app-modify-validator>-->
-
-<!--响应式表单异步校验器-->
-<!--<app-async-demo></app-async-demo>-->
-
-<!--模板驱动式表单验证-->
-<app-forms-validator></app-forms-validator>
+<nz-layout>
+  <nz-header>
+    <div class="logo"><span routerLink="/introduce">Demo-Test W先生的Blog的练手场</span></div>
+  </nz-header>
+  <nz-layout>
+    <nz-sider [nzWidth]="200" style="background:#fff">
+      <app-demo-sider></app-demo-sider>
+    </nz-sider>
+    <nz-layout style="padding:8px">
+      <nz-content class="routerContent">
+        <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

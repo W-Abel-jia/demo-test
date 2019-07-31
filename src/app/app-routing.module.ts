@@ -1,9 +1,11 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ParentComComponent} from './parent-com/parent-com.component';
+import {IntroduceComponent} from './introduce/introduce.component';
 
 const routes: Routes = [
-  {path: '', component: ParentComComponent}
+  {path: '', pathMatch: 'full', redirectTo: 'introduce'},
+  {path: 'introduce', component: IntroduceComponent},
+  {path: 'pages', loadChildren: './pages/pages.module#PagesModule'}
 ];
 
 @NgModule({

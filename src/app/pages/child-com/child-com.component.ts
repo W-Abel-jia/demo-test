@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges} from '@angular/core';
-import {ParentChildServiceService} from '../parent-child-service.service';
+
 import {Subscription} from 'rxjs';
+import {ParentChildServiceService} from '../../parent-child-service.service';
 
 @Component({
   selector: 'app-child-com',
@@ -27,7 +28,7 @@ export class ChildComComponent implements OnInit, OnChanges, OnDestroy {
     console.log(changes);
   }
 
-  // toParentEvent() {
-  //   console.log('点击了子组件');
-  // }
+  toParentEvent() {
+    console.log('点击了子组件');
+  }
 }

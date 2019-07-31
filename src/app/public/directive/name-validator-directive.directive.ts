@@ -1,6 +1,6 @@
 import {Directive} from '@angular/core';
 import {AbstractControl, NG_VALIDATORS, ValidationErrors, Validator} from '@angular/forms';
-import {nameValidator} from '../../forms-validator/forms-validator.component';
+import {nameValidator} from '../../pages/forms-validator/forms-validator.component';
 
 @Directive({
   selector: '[appNameValidatorDirective]',

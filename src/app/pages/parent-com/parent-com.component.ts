@@ -1,7 +1,7 @@
 import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {Template} from '@angular/compiler/src/render3/r3_ast';
 import {ChildComComponent} from '../child-com/child-com.component';
-import {ParentChildServiceService} from '../parent-child-service.service';
+import {ParentChildServiceService} from '../../parent-child-service.service';
 
 @Component({
   selector: 'app-parent-com',
@@ -21,7 +21,7 @@ export class ParentComComponent implements OnInit {
   ngOnInit() {
     // console.log('ddsadd');
     // console.log('eqweqwee')
-    
+
   }
 
   parentEvent() {
