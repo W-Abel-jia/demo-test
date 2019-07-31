@@ -17,9 +17,11 @@ import {UserInfoComponent} from './user-info/user-info.component';
 import {EditTableComponent} from './edit-table/edit-table.component';
 import {FormNestedComponent} from './form-nested/form-nested.component';
 import {ReactiveFormValidatorComponent} from './reactive-form-validator/reactive-form-validator.component';
-import { ModifyValidatorComponent } from './modify-validator/modify-validator.component';
-import { ComponentNameComponent } from './component-name/component-name.component';
-import { AsyncDemoComponent } from './async-demo/async-demo.component';
+import {ModifyValidatorComponent} from './modify-validator/modify-validator.component';
+import {ComponentNameComponent} from './component-name/component-name.component';
+import {AsyncDemoComponent} from './async-demo/async-demo.component';
+import {FormsValidatorComponent} from './forms-validator/forms-validator.component';
+import { NameValidatorDirectiveDirective } from './public/directive/name-validator-directive.directive';
 // import { FormsValidatorComponent } from './public/forms-validator/forms-validator.component';
 
 registerLocaleData(zh);
@@ -38,6 +40,8 @@ registerLocaleData(zh);
     ModifyValidatorComponent,
     ComponentNameComponent,
     AsyncDemoComponent,
+    FormsValidatorComponent,
+    NameValidatorDirectiveDirective
   ],
   imports: [
     BrowserModule,

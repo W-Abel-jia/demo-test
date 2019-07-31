@@ -1,3 +1,23 @@
-<p>
-  forms-validator works!
-</p>
+<nz-content>
+  <nz-divider nzText="模板驱动式表单验证"></nz-divider>
+  <form nz-form>
+    <nz-form-item>
+      <nz-form-label nzSpan="3" nz-col>姓名</nz-form-label>
+      <nz-form-control nzSpan="6" nz-col>
+        <input nz-input type="text" name="name" id="name"
+               required minlength="2" maxlength="10" appNameValidatorDirective
+               #nameValidate="ngModel"
+               [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.required">
+          必填选项不能为空
+        </nz-form-explain>
+        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.minlength">
+          最小长度为2
+        </nz-form-explain>
+        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.nameValidator">
+          只能输入英文、数字、下划线
+        </nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</nz-content>
