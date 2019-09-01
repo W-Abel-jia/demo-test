@@ -1,4 +1,4 @@
 <ul nz-menu [nzMode]="'inline'" style="height:100%" [nzTheme]="'dark'">
   <li *ngFor="let info of comInfo" nz-menu-item
-      [routerLink]="'pages'+'/'+info.routLink" [routerLinkActive]="'pages'+'/'+info.routLink">{{info.title}}</li>
+      [routerLink]="'pages'+'/'+info.routLink" routerLinkActive='active'>{{info.title}}</li>
 </ul>

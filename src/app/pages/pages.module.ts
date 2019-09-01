@@ -16,6 +16,10 @@ import {UserInfoComponent} from './user-info/user-info.component';
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
 import {ChildComComponent} from './child-com/child-com.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DemoStyleComponent } from './demo-style/demo-style.component';
+import { DemoStyleOneComponent } from './demo-style-one/demo-style-one.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import {ChildComComponent} from './child-com/child-com.component';
     UserInfoComponent,
     ComplexAnimationsComponent,
     AnimationDemoComponent,
-    ChildComComponent
+    ChildComComponent,
+    DynamicFormComponent,
+    DemoStyleComponent,
+    DemoStyleOneComponent,
+    LifecycleHooksComponent
   ],
   imports: [
     CommonModule,

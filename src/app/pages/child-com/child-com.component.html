@@ -11,7 +11,9 @@
     子组件
   </nz-form-label>
   <nz-form-control nz-col nzSpan="5">
-   <button nz-button (click)="toParentEvent()">子组件的按钮</button>
+    <button nz-button (click)="toParentEvent()">子组件的按钮</button>
   </nz-form-control>
 </nz-row>
 
+<ng-content></ng-content>
+<h3>test</h3>

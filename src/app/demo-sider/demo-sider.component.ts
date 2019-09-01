@@ -17,6 +17,7 @@ export class DemoSiderComponent implements OnInit {
     {title: '动态修改响应式表单的校验器', routLink: 'modifyValidator'},
     {title: '响应式表单的验证', routLink: 'reactiveFormValidator'},
     {title: '响应式表单', routLink: 'userInfo'},
+    {title: '生命周期钩子', routLink: 'lifecycleHooks'},
   ];
 
   constructor() {

@@ -1,5 +1,6 @@
 import {ApplicationRef, Component, OnInit} from '@angular/core';
 import {FormControl, Validators, FormGroup, FormArray, FormBuilder} from '@angular/forms';
+import {TaskStatus} from '../../task-status.enum';
 
 @Component({
   selector: 'app-user-info',
@@ -56,6 +57,9 @@ export class UserInfoComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(TaskStatus.a);
+    console.log(TaskStatus[0]);
+
   }
 
   public handleInitForm(): void {

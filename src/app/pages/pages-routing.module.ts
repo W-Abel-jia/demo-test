@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {ParentComComponent} from './parent-com/parent-com.component';
 import {FormsValidatorComponent} from './forms-validator/forms-validator.component';
 import {AsyncDemoComponent} from './async-demo/async-demo.component';
@@ -10,6 +10,7 @@ import {FormNestedComponent} from './form-nested/form-nested.component';
 import {UserInfoComponent} from './user-info/user-info.component';
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
+import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
@@ -23,10 +24,12 @@ const routes: Routes = [
   {path: 'userInfo', component: UserInfoComponent},
   {path: 'complexAnimations', component: ComplexAnimationsComponent},
   {path: 'animationDemo', component: AnimationDemoComponent},
+  {path: 'lifecycleHooks', component: LifecycleHooksComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {
+}
