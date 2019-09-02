@@ -1,6 +1,7 @@
 import {ApplicationRef, Component, OnInit} from '@angular/core';
 import {FormControl, Validators, FormGroup, FormArray, FormBuilder} from '@angular/forms';
 import {TaskStatus} from '../../task-status.enum';
+import {tryCatch} from 'rxjs/internal-compatibility';
 
 @Component({
   selector: 'app-user-info',
@@ -60,6 +61,35 @@ export class UserInfoComponent implements OnInit {
     console.log(TaskStatus.a);
     console.log(TaskStatus[0]);
 
+    // function* initList() {
+    //   for (let i = 0; i < 3; i++) {
+    //     yield i++;
+    //   }
+    // }
+    //
+    // const initGenerator = initList();
+    // console.log(initGenerator.next());
+    //
+    // function* generatorInfo() {
+    //   const name = yield;
+    //   console.log('hello' + name);
+    // }
+    //
+    // const initGeneratorInfo = generatorInfo();
+    // console.log(initGeneratorInfo.return());
+    // console.log(initGeneratorInfo.return('W先生...'));
+
+    function* generatorError() {
+      try {
+        yield 0;
+      } catch (e) {
+        console.log(e.message);
+      }
+    }
+
+    const initGeneratorError = generatorError();
+    console.log(initGeneratorError.next());
+    console.log(initGeneratorError.throw(new Error('发生错误')));
   }
 
   public handleInitForm(): void {
