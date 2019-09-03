@@ -12,6 +12,7 @@ import zh from '@angular/common/locales/zh';
 import {IntroduceComponent} from './introduce/introduce.component';
 import {DemoSiderComponent} from './demo-sider/demo-sider.component';
 import {ShowdownModule} from 'ngx-showdown';
+import {NameValidatorDirectiveDirective} from './public/directive/name-validator-directive.directive';
 
 registerLocaleData(zh);
 
@@ -20,6 +21,7 @@ registerLocaleData(zh);
     AppComponent,
     IntroduceComponent,
     DemoSiderComponent,
+    NameValidatorDirectiveDirective,
   ],
   imports: [
     ShowdownModule,
