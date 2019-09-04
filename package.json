@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:github": "ng build --prod --output-path docs --base-href //"
+    "build:github": "ng build --prod --output-path docs --base-href /demo-test"
   },
   "private": true,
   "dependencies": {
