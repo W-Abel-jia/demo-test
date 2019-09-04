@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+interface UserInfo {
+  name: string;
+  age: number;
+  address: string[];
+}
 
 @Component({
   selector: 'app-root',
@@ -7,4 +13,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-test';
+  user: UserInfo;
 }
