@@ -11,6 +11,7 @@ import {UserInfoComponent} from './user-info/user-info.component';
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
 import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.component';
+import {StyleDemoComponent} from './style-demo/style-demo.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'complexAnimations', component: ComplexAnimationsComponent},
   {path: 'animationDemo', component: AnimationDemoComponent},
   {path: 'lifecycleHooks', component: LifecycleHooksComponent},
+  {path: 'styleDemo', component: StyleDemoComponent},
 ];
 
 @NgModule({

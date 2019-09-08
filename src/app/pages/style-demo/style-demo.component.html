@@ -1,0 +1,8 @@
+<h3>组件的样式demo--host选择器</h3>
+<h3>组件的样式demo--host-content选择器</h3>
+<app-style-demo-child [class.isChoose]="isChoose">
+  <h3>组件的样式ng-content 的内容</h3>
+</app-style-demo-child>
+
+<button nz-button (click)="handleChoose()">改变子组件的状态</button>
+<button nz-button (click)="handleShiftTheme()">更换主题</button>

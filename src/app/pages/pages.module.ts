@@ -20,6 +20,8 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DemoStyleComponent } from './demo-style/demo-style.component';
 import { DemoStyleOneComponent } from './demo-style-one/demo-style-one.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { StyleDemoComponent } from './style-demo/style-demo.component';
+import { StyleDemoChildComponent } from './style-demo-child/style-demo-child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     DynamicFormComponent,
     DemoStyleComponent,
     DemoStyleOneComponent,
-    LifecycleHooksComponent
+    LifecycleHooksComponent,
+    StyleDemoComponent,
+    StyleDemoChildComponent
   ],
   imports: [
     CommonModule,
