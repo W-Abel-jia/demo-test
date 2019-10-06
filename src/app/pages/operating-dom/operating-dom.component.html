@@ -1,0 +1,32 @@
+<h1>Render2 操作DOM</h1>
+<nz-divider nzText="创建一个DOM"></nz-divider>
+<div #demo></div>
+<button nz-button (click)="restDemoApi1()">createElement</button>
+
+<nz-divider nzText="添加/删除Attribute"></nz-divider>
+<button nz-button (click)="handleSetAttribute()">添加Attribute</button>
+<button nz-button (click)="handleRemoveAttribute()">删除Attribute</button>
+
+<nz-divider nzText="添加/删除 Class"></nz-divider>
+<button nz-button (click)="handleSetClass()">添加Class</button>
+<button nz-button (click)="handleRemoveClass()">删除Class</button>
+
+
+<nz-divider nzText="添加/删除 style"></nz-divider>
+<button nz-button (click)="handleSetStyle()">添加style</button>
+<button nz-button (click)="handleRemoveStyle()">删除style</button>
+
+<nz-divider nzText="添加 Property"></nz-divider>
+
+<nz-form-item>
+  <nz-form-control nzSpan="4" nz-col>
+    <label>
+      <input nz-input #demoInput>
+    </label>
+  </nz-form-control>
+  <nz-form-control nzSpan="4" nz-col>
+    <button nz-button (click)="handleSetProperty()">添加 Property</button>
+  </nz-form-control>
+</nz-form-item>
+
+

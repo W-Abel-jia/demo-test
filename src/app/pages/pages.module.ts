@@ -22,6 +22,7 @@ import { DemoStyleOneComponent } from './demo-style-one/demo-style-one.component
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { StyleDemoComponent } from './style-demo/style-demo.component';
 import { StyleDemoChildComponent } from './style-demo-child/style-demo-child.component';
+import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { StyleDemoChildComponent } from './style-demo-child/style-demo-child.com
     DemoStyleOneComponent,
     LifecycleHooksComponent,
     StyleDemoComponent,
-    StyleDemoChildComponent
+    StyleDemoChildComponent,
+    OperatingDOMComponent
   ],
   imports: [
     CommonModule,

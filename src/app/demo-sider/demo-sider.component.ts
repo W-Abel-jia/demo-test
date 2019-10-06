@@ -19,6 +19,7 @@ export class DemoSiderComponent implements OnInit {
     {title: '响应式表单', routLink: 'userInfo'},
     {title: '生命周期钩子', routLink: 'lifecycleHooks'},
     {title: '组件样式demo', routLink: 'styleDemo'},
+    {title: '操作DOM', routLink: 'operatingDOM'},
   ];
 
   constructor() {

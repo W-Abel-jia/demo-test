@@ -12,6 +12,7 @@ import {ComplexAnimationsComponent} from './complex-animations/complex-animation
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
 import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.component';
 import {StyleDemoComponent} from './style-demo/style-demo.component';
+import {OperatingDOMComponent} from './operating-dom/operating-dom.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'animationDemo', component: AnimationDemoComponent},
   {path: 'lifecycleHooks', component: LifecycleHooksComponent},
   {path: 'styleDemo', component: StyleDemoComponent},
+  {path: 'operatingDOM', component: OperatingDOMComponent},
 ];
 
 @NgModule({
