@@ -123,6 +123,8 @@ THE SOFTWARE.
 ng-zorro-antd
 MIT
 
+ng-zorro-antd/alert
+
 ng-zorro-antd/button
 
 ng-zorro-antd/checkbox
