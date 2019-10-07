@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-edit-table',
@@ -6,7 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./edit-table.component.less']
 })
 export class EditTableComponent implements OnInit {
-  dataSet = [
+  @Output() backInfo: EventEmitter<string> = new EventEmitter<string>();
+  public dataSet = [
     {
       key: '1',
       name: 'John Brown',

@@ -13,6 +13,7 @@ import {AnimationDemoComponent} from './animation-demo/animation-demo.component'
 import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.component';
 import {StyleDemoComponent} from './style-demo/style-demo.component';
 import {OperatingDOMComponent} from './operating-dom/operating-dom.component';
+import {DynamicComComponent} from './dynamic-com/dynamic-com.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'lifecycleHooks', component: LifecycleHooksComponent},
   {path: 'styleDemo', component: StyleDemoComponent},
   {path: 'operatingDOM', component: OperatingDOMComponent},
+  {path: 'dynamicCom', component: DynamicComComponent},
 ];
 
 @NgModule({

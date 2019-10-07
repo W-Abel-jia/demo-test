@@ -20,6 +20,7 @@ export class DemoSiderComponent implements OnInit {
     {title: '生命周期钩子', routLink: 'lifecycleHooks'},
     {title: '组件样式demo', routLink: 'styleDemo'},
     {title: '操作DOM', routLink: 'operatingDOM'},
+    {title: '动态创建组件', routLink: 'dynamicCom'},
   ];
 
   constructor() {

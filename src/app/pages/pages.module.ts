@@ -23,6 +23,7 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { StyleDemoComponent } from './style-demo/style-demo.component';
 import { StyleDemoChildComponent } from './style-demo-child/style-demo-child.component';
 import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
+import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
     LifecycleHooksComponent,
     StyleDemoComponent,
     StyleDemoChildComponent,
-    OperatingDOMComponent
+    OperatingDOMComponent,
+    DynamicComComponent
   ],
   imports: [
     CommonModule,
