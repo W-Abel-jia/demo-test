@@ -21,6 +21,7 @@ export class DemoSiderComponent implements OnInit {
     {title: '组件样式demo', routLink: 'styleDemo'},
     {title: '操作DOM', routLink: 'operatingDOM'},
     {title: '动态创建组件', routLink: 'dynamicCom'},
+    {title: '惰性加载路由', routLink: 'lazyLoad'},
   ];
 
   constructor() {

@@ -14,6 +14,7 @@ import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.compone
 import {StyleDemoComponent} from './style-demo/style-demo.component';
 import {OperatingDOMComponent} from './operating-dom/operating-dom.component';
 import {DynamicComComponent} from './dynamic-com/dynamic-com.component';
+import {LazyLoadModule} from './lazy-load/lazy-load.module';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path: 'styleDemo', component: StyleDemoComponent},
   {path: 'operatingDOM', component: OperatingDOMComponent},
   {path: 'dynamicCom', component: DynamicComComponent},
+  {path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule'}
 ];
 
 @NgModule({
