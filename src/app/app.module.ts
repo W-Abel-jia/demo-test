@@ -5,14 +5,15 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgZorroAntdModule, NZ_I18N, zh_CN} from 'ng-zorro-antd';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HashLocationStrategy, LocationStrategy, registerLocaleData} from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import {IntroduceComponent} from './introduce/introduce.component';
 import {DemoSiderComponent} from './demo-sider/demo-sider.component';
-import {ShowdownModule} from 'ngx-showdown';
 import {NameValidatorDirectiveDirective} from './public/directive/name-validator-directive.directive';
+import {DemoInterceptorService} from './public/service/demo-interceptor.service';
+import {ShowdownModule} from 'ngx-showdown';
 
 registerLocaleData(zh);
 
@@ -41,7 +42,13 @@ registerLocaleData(zh);
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy
-    }],
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: DemoInterceptorService,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

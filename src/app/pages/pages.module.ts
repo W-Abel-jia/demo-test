@@ -16,14 +16,15 @@ import {UserInfoComponent} from './user-info/user-info.component';
 import {ComplexAnimationsComponent} from './complex-animations/complex-animations.component';
 import {AnimationDemoComponent} from './animation-demo/animation-demo.component';
 import {ChildComComponent} from './child-com/child-com.component';
-import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
-import { DemoStyleComponent } from './demo-style/demo-style.component';
-import { DemoStyleOneComponent } from './demo-style-one/demo-style-one.component';
-import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
-import { StyleDemoComponent } from './style-demo/style-demo.component';
-import { StyleDemoChildComponent } from './style-demo-child/style-demo-child.component';
-import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
-import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
+import {DynamicFormComponent} from './dynamic-form/dynamic-form.component';
+import {DemoStyleComponent} from './demo-style/demo-style.component';
+import {DemoStyleOneComponent} from './demo-style-one/demo-style-one.component';
+import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.component';
+import {StyleDemoComponent} from './style-demo/style-demo.component';
+import {StyleDemoChildComponent} from './style-demo-child/style-demo-child.component';
+import {OperatingDOMComponent} from './operating-dom/operating-dom.component';
+import {DynamicComComponent} from './dynamic-com/dynamic-com.component';
+import {ComponentsModule} from '../component/components/components.module';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
     NgZorroAntdModule,
     FormsModule,
     ReactiveFormsModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ComponentsModule,
   ]
 })
 export class PagesModule {
