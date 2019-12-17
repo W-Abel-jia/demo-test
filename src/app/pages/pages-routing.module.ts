@@ -14,24 +14,23 @@ import {LifecycleHooksComponent} from './lifecycle-hooks/lifecycle-hooks.compone
 import {StyleDemoComponent} from './style-demo/style-demo.component';
 import {OperatingDOMComponent} from './operating-dom/operating-dom.component';
 import {DynamicComComponent} from './dynamic-com/dynamic-com.component';
-import {LazyLoadModule} from './lazy-load/lazy-load.module';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'parentCom'},
-  {path: 'parentCom', component: ParentComComponent},
-  {path: 'formsValidator', component: FormsValidatorComponent},
-  {path: 'asyncDemo', component: AsyncDemoComponent},
-  {path: 'editTable', component: EditTableComponent},
-  {path: 'modifyValidator', component: ModifyValidatorComponent},
-  {path: 'reactiveFormValidator', component: ReactiveFormValidatorComponent},
-  {path: 'formNested', component: FormNestedComponent},
-  {path: 'userInfo', component: UserInfoComponent},
-  {path: 'complexAnimations', component: ComplexAnimationsComponent},
-  {path: 'animationDemo', component: AnimationDemoComponent},
-  {path: 'lifecycleHooks', component: LifecycleHooksComponent},
-  {path: 'styleDemo', component: StyleDemoComponent},
-  {path: 'operatingDOM', component: OperatingDOMComponent},
-  {path: 'dynamicCom', component: DynamicComComponent},
+  {path: 'parentCom', component: ParentComComponent, data: {animationName: 'parentCom'}},
+  {path: 'formsValidator', component: FormsValidatorComponent, data: {animationName: 'formsValidator'}},
+  {path: 'asyncDemo', component: AsyncDemoComponent, data: {animationName: 'asyncDemo'}},
+  {path: 'editTable', component: EditTableComponent, data: {animationName: 'editTable'}},
+  {path: 'modifyValidator', component: ModifyValidatorComponent, data: {animationName: 'modifyValidator'}},
+  {path: 'reactiveFormValidator', component: ReactiveFormValidatorComponent, data: {animationName: 'reactiveFormValidator'}},
+  {path: 'formNested', component: FormNestedComponent, data: {animationName: 'formNested'}},
+  {path: 'userInfo', component: UserInfoComponent, data: {animationName: 'userInfo'}},
+  {path: 'complexAnimations', component: ComplexAnimationsComponent, data: {animationName: 'complexAnimations'}},
+  {path: 'animationDemo', component: AnimationDemoComponent, data: {animationName: 'animationDemo'}},
+  {path: 'lifecycleHooks', component: LifecycleHooksComponent, data: {animationName: 'lifecycleHooks'}},
+  {path: 'styleDemo', component: StyleDemoComponent, data: {animationName: 'styleDemo'}},
+  {path: 'operatingDOM', component: OperatingDOMComponent, data: {animationName: 'operatingDOM'}},
+  {path: 'dynamicCom', component: DynamicComComponent, data: {animationName: 'dynamicCom'}},
   {path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule'}
 ];
 

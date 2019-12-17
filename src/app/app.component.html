@@ -16,7 +16,9 @@
     </nz-sider>
     <nz-layout>
       <nz-content class="routerContent">
-        <router-outlet></router-outlet>
+        <div [@routeAnimations]="animationRoute(outletInfo)">
+          <router-outlet #outletInfo="outlet"></router-outlet>
+        </div>
       </nz-content>
     </nz-layout>
   </nz-layout>
