@@ -14,6 +14,15 @@ export class IntroduceComponent implements OnInit {
   }
 
   ngOnInit() {
+    const obj = {};
+    const a = Symbol('a');
+    const b = Symbol('b');
+    obj[a] = 'abc';
+    obj[b] = 'def';
+
+    const objectSymbols = Object.getOwnPropertySymbols(obj);
+
+    console.log(objectSymbols);
     // console.log('x'.padStart(5, 'ab'));
     // console.log('x'.padEnd(5, 'ab'));
     // console.log('XXXXX'.padEnd(5, 'ab'));
@@ -54,8 +63,8 @@ export class IntroduceComponent implements OnInit {
     // console.log('dasdasd123'.substring(2, 5));
     // console.log('QAQAQA'.toLocaleLowerCase());
     // console.log('QAQAQA'.toLowerCase());
-    console.log('aaaa'.toLocaleUpperCase());
-    console.log('aaaa'.toUpperCase());
+    // console.log('aaaa'.toLocaleUpperCase());
+    // console.log('aaaa'.toUpperCase());
 
     // console.log(s.trimStart());
     // console.log(s.trimEnd());
