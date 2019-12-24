@@ -68,6 +68,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 @ant-design/colors
 MIT
 MIT LICENSE
