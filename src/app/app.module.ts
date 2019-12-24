@@ -14,6 +14,8 @@ import {DemoSiderComponent} from './demo-sider/demo-sider.component';
 import {NameValidatorDirectiveDirective} from './public/directive/name-validator-directive.directive';
 import {DemoInterceptorService} from './public/service/demo-interceptor.service';
 import {ShowdownModule} from 'ngx-showdown';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 registerLocaleData(zh);
 
@@ -32,7 +34,8 @@ registerLocaleData(zh);
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     {
