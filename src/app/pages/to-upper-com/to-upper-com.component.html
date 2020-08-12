@@ -1,0 +1,8 @@
+<form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label nzSpan="4">转换大写</nz-form-label>
+    <nz-form-control nzSpan="7">
+      <input nz-input appToUpperCase formControlName="name" placeholder="请输入字符">
+    </nz-form-control>
+  </nz-form-item>
+</form>
