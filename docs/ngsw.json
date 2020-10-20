@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1577168395757,
+  "timestamp": 1603182253998,
   "index": "/demo-test/index.html",
   "assetGroups": [
     {
@@ -9,13 +9,13 @@
       "updateMode": "prefetch",
       "urls": [
         "/demo-test/5.35ed538a2e894d2a4d9f.js",
-        "/demo-test/6.db0319ae38a4141f2a1b.js",
+        "/demo-test/6.ebd28dbbd51632419529.js",
         "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js",
         "/demo-test/favicon.ico",
         "/demo-test/index.html",
-        "/demo-test/main.122395424faf450d76a4.js",
+        "/demo-test/main.abe7d1d9fd0bb79828bd.js",
         "/demo-test/polyfills.8bbb231b43165d65d357.js",
-        "/demo-test/runtime.f4fdfc3f6f9b4a3ee9ee.js",
+        "/demo-test/runtime.4e99748dcd6d7cb5c236.js",
         "/demo-test/styles.9f36bcce31eb8f2f9d90.css"
       ],
       "patterns": []
@@ -41,7 +41,7 @@
   "dataGroups": [],
   "hashTable": {
     "/demo-test/5.35ed538a2e894d2a4d9f.js": "a32704f000595ef17d6b1c57afcc333ec3575f27",
-    "/demo-test/6.db0319ae38a4141f2a1b.js": "2bd044cfad66bc20d905ae0b1c918730f68d948d",
+    "/demo-test/6.ebd28dbbd51632419529.js": "a67bbe37ab6a4a28460c7418852c75073297cce5",
     "/demo-test/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/demo-test/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/demo-test/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -53,10 +53,10 @@
     "/demo-test/assets/nameList.json": "adf2fcbcebb922928f0155407a3f4284650765e7",
     "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
     "/demo-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/demo-test/index.html": "aa5fa95e460601a15e816cd6cb4cf32d8e1cd05a",
-    "/demo-test/main.122395424faf450d76a4.js": "6db23a34ac2fbf3ca540e674f5ac4a94a234e3f2",
+    "/demo-test/index.html": "76d2d83bac06a2fae856067ea3411724a4db6ddc",
+    "/demo-test/main.abe7d1d9fd0bb79828bd.js": "d7a9f835028804464280b142d30399f9ae4eaaa1",
     "/demo-test/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
-    "/demo-test/runtime.f4fdfc3f6f9b4a3ee9ee.js": "21d2d92bf1280a0db0bfc654065656471629121e",
+    "/demo-test/runtime.4e99748dcd6d7cb5c236.js": "a81e6531af0e47985afd780d81b9326635aa9358",
     "/demo-test/styles.9f36bcce31eb8f2f9d90.css": "9000ac996b0c3c045f7f537c1f84eaefa321da55"
   },
   "navigationUrls": [
