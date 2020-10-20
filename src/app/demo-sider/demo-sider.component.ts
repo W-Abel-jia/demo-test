@@ -23,6 +23,7 @@ export class DemoSiderComponent implements OnInit {
     {title: '动态创建组件', routLink: 'dynamicCom'},
     {title: '惰性加载路由', routLink: 'lazyLoad'},
     {title: '转换大写字符', routLink: 'toUpperCom'},
+    {title: '复制到剪切板', routLink: 'copyToClipboard'},
   ];
 
   constructor() {

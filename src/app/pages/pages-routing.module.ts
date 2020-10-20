@@ -14,7 +14,8 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { StyleDemoComponent } from './style-demo/style-demo.component';
 import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
 import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
-import { ToUpperComComponent } from "./to-upper-com/to-upper-com.component";
+import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
+import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'parentCom' },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'dynamicCom', component: DynamicComComponent, data: { animationName: 'dynamicCom' } },
   { path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule' },
   { path: 'toUpperCom', component: ToUpperComComponent, data: { animationName: 'dynamicCom' } },
+  { path: 'copyToClipboard', component: CopyToClipboardComponent, data: { animationName: 'operatingDOM' } },
 ];
 
 @NgModule({

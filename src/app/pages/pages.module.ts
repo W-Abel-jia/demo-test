@@ -27,6 +27,7 @@ import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
 import { ComponentsModule } from '../component/components/components.module';
 import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
 import { ToUpperCaseDirective } from '../public/directive/to-upper-case.directive';
+import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ToUpperCaseDirective } from '../public/directive/to-upper-case.directiv
     DynamicComComponent,
     ToUpperComComponent,
     ToUpperCaseDirective,
+    CopyToClipboardComponent,
   ],
   imports: [
     CommonModule,
