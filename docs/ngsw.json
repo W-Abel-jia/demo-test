@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1603182253998,
+  "timestamp": 1603852848296,
   "index": "/demo-test/index.html",
   "assetGroups": [
     {
@@ -9,13 +9,13 @@
       "updateMode": "prefetch",
       "urls": [
         "/demo-test/5.35ed538a2e894d2a4d9f.js",
-        "/demo-test/6.ebd28dbbd51632419529.js",
+        "/demo-test/6.71abc06ef7bd384e56e2.js",
         "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js",
         "/demo-test/favicon.ico",
         "/demo-test/index.html",
-        "/demo-test/main.abe7d1d9fd0bb79828bd.js",
+        "/demo-test/main.19a2e89bb307d0a7b840.js",
         "/demo-test/polyfills.8bbb231b43165d65d357.js",
-        "/demo-test/runtime.4e99748dcd6d7cb5c236.js",
+        "/demo-test/runtime.cb4d0ea1035d6f59280e.js",
         "/demo-test/styles.9f36bcce31eb8f2f9d90.css"
       ],
       "patterns": []
@@ -41,7 +41,7 @@
   "dataGroups": [],
   "hashTable": {
     "/demo-test/5.35ed538a2e894d2a4d9f.js": "a32704f000595ef17d6b1c57afcc333ec3575f27",
-    "/demo-test/6.ebd28dbbd51632419529.js": "a67bbe37ab6a4a28460c7418852c75073297cce5",
+    "/demo-test/6.71abc06ef7bd384e56e2.js": "f3bd12b0c9c61605de7237df64fe198785f394b3",
     "/demo-test/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/demo-test/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/demo-test/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -53,10 +53,10 @@
     "/demo-test/assets/nameList.json": "adf2fcbcebb922928f0155407a3f4284650765e7",
     "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
     "/demo-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/demo-test/index.html": "76d2d83bac06a2fae856067ea3411724a4db6ddc",
-    "/demo-test/main.abe7d1d9fd0bb79828bd.js": "d7a9f835028804464280b142d30399f9ae4eaaa1",
+    "/demo-test/index.html": "b60991c341d45cfae1a7b20de8d60f3bba4915b2",
+    "/demo-test/main.19a2e89bb307d0a7b840.js": "8d4299f503b1a5ad3d67f7d5bff946fc13c4e8db",
     "/demo-test/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
-    "/demo-test/runtime.4e99748dcd6d7cb5c236.js": "a81e6531af0e47985afd780d81b9326635aa9358",
+    "/demo-test/runtime.cb4d0ea1035d6f59280e.js": "cef3cfad0d553915eefb9e7efa4e278bd090cb00",
     "/demo-test/styles.9f36bcce31eb8f2f9d90.css": "9000ac996b0c3c045f7f537c1f84eaefa321da55"
   },
   "navigationUrls": [
