@@ -28,6 +28,7 @@ import { ComponentsModule } from '../component/components/components.module';
 import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
 import { ToUpperCaseDirective } from '../public/directive/to-upper-case.directive';
 import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
+import { SluggishnessTreeTableComponent } from './sluggishness-tree-table/sluggishness-tree-table.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.
     ToUpperComComponent,
     ToUpperCaseDirective,
     CopyToClipboardComponent,
+    SluggishnessTreeTableComponent
   ],
   imports: [
     CommonModule,

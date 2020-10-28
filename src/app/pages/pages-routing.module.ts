@@ -16,6 +16,7 @@ import { OperatingDOMComponent } from './operating-dom/operating-dom.component';
 import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
 import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
 import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
+import { SluggishnessTreeTableComponent } from './sluggishness-tree-table/sluggishness-tree-table.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'parentCom' },
@@ -40,6 +41,11 @@ const routes: Routes = [
   { path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule' },
   { path: 'toUpperCom', component: ToUpperComComponent, data: { animationName: 'dynamicCom' } },
   { path: 'copyToClipboard', component: CopyToClipboardComponent, data: { animationName: 'operatingDOM' } },
+  {
+    path: 'sluggishnessTreeTableComponent',
+    component: SluggishnessTreeTableComponent,
+    data: { animationName: 'operatingDOM' }
+  },
 ];
 
 @NgModule({
