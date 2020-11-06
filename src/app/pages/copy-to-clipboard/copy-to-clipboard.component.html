@@ -1,4 +1,7 @@
 <nz-content>
+  <h3>单独使用</h3>
   <label #copyWord>这事要复制到剪切板的内容</label>
   <button nz-button (click)="handleCopyToClipboard(copyWord)">复制</button>
+  <h3>封装到组件中使用</h3>
+  <label appCopyable [copyContent]="'封装的组件到剪切板'"></label>
 </nz-content>

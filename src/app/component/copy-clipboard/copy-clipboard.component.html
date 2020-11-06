@@ -1,0 +1,7 @@
+<ng-container>
+  <ng-template #contentTemplate let-content="copyContent">
+    {{ copyContent }}
+  </ng-template>
+  <ng-template [ngTemplateOutlet]="contentTemplate"></ng-template>
+  <i nz-icon nzType="copy" nzTheme="outline" (click)="handleCopyContent()"></i>
+</ng-container>
