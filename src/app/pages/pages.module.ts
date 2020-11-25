@@ -29,6 +29,8 @@ import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
 import { ToUpperCaseDirective } from '../public/directive/to-upper-case.directive';
 import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
 import { SluggishnessTreeTableComponent } from './sluggishness-tree-table/sluggishness-tree-table.component';
+import { TrafficLightComponent } from './traffic-light/traffic-light.component';
+import { NgForTrackByComponent } from './ng-for-track-by/ng-for-track-by.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { SluggishnessTreeTableComponent } from './sluggishness-tree-table/sluggi
     ToUpperComComponent,
     ToUpperCaseDirective,
     CopyToClipboardComponent,
-    SluggishnessTreeTableComponent
+    SluggishnessTreeTableComponent,
+    TrafficLightComponent,
+    NgForTrackByComponent
   ],
   imports: [
     CommonModule,

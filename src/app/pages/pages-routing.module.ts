@@ -17,6 +17,8 @@ import { DynamicComComponent } from './dynamic-com/dynamic-com.component';
 import { ToUpperComComponent } from './to-upper-com/to-upper-com.component';
 import { CopyToClipboardComponent } from './copy-to-clipboard/copy-to-clipboard.component';
 import { SluggishnessTreeTableComponent } from './sluggishness-tree-table/sluggishness-tree-table.component';
+import { TrafficLightComponent } from './traffic-light/traffic-light.component';
+import { NgForTrackByComponent } from './ng-for-track-by/ng-for-track-by.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'parentCom' },
@@ -41,6 +43,8 @@ const routes: Routes = [
   { path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule' },
   { path: 'toUpperCom', component: ToUpperComComponent, data: { animationName: 'dynamicCom' } },
   { path: 'copyToClipboard', component: CopyToClipboardComponent, data: { animationName: 'operatingDOM' } },
+  { path: 'trafficLight', component: TrafficLightComponent, data: { animationName: 'operatingDOM' } },
+  { path: 'ngForTrackBy', component: NgForTrackByComponent, data: { animationName: 'dynamicCom' } },
   {
     path: 'sluggishnessTreeTableComponent',
     component: SluggishnessTreeTableComponent,
