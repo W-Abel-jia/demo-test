@@ -1,0 +1,17 @@
+<nz-content>
+  <button nz-button (click)="handleGetDemoListData()">reset demo list</button>
+  <button nz-button (click)="handleGetDemoListDataWithChangeIds()">改变 ID</button>
+  <h3>noTrackBy</h3>
+  <div #noTrackBy *ngFor="let demo of demoList">
+    {{ demo.id }} {{ demo.name }}
+  </div>
+  <h3>DOM 变化次数 {{ demoNoTrackByCount }}</h3>
+
+  <h3>TrackBy</h3>
+  <div #trackBy *ngFor="let demo of demoList trackBy:trackBy">
+    {{ demo.id }} {{ demo.name }}
+  </div>
+  <h3>DOM 变化次数 {{ demoWithTrackByCount }}</h3>
+
+</nz-content>
+

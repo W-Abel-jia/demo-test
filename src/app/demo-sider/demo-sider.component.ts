@@ -25,6 +25,8 @@ export class DemoSiderComponent implements OnInit {
     { title: '转换大写字符', routLink: 'toUpperCom' },
     { title: '复制到剪切板', routLink: 'copyToClipboard' },
     { title: '惰性加载树状表格', routLink: 'sluggishnessTreeTableComponent' },
+    { title: '红绿灯', routLink: 'trafficLight' },
+    { title: '*ngFor性能', routLink: 'ngForTrackBy' },
   ];
 
   constructor() {
