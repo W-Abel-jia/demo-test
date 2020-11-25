@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604658882958,
+  "timestamp": 1606298937408,
   "index": "/demo-test/index.html",
   "assetGroups": [
     {
@@ -9,13 +9,16 @@
       "updateMode": "prefetch",
       "urls": [
         "/demo-test/5.35ed538a2e894d2a4d9f.js",
+        "/demo-test/6.6294fa93441f42ea0e2d.js",
         "/demo-test/6.63887d591f76fb024130.js",
         "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js",
         "/demo-test/favicon.ico",
         "/demo-test/index.html",
+        "/demo-test/main.ac68be49a9224530eeff.js",
         "/demo-test/main.bd8deda330168e32855f.js",
         "/demo-test/polyfills.8bbb231b43165d65d357.js",
         "/demo-test/runtime.8ef73a02c14626fdc1c3.js",
+        "/demo-test/runtime.ddd621a4c34e65644841.js",
         "/demo-test/styles.9f36bcce31eb8f2f9d90.css"
       ],
       "patterns": []
@@ -767,6 +770,7 @@
   "dataGroups": [],
   "hashTable": {
     "/demo-test/5.35ed538a2e894d2a4d9f.js": "a32704f000595ef17d6b1c57afcc333ec3575f27",
+    "/demo-test/6.6294fa93441f42ea0e2d.js": "c2d3924614611ce2f9bd8b0ffaf922ad892d45fa",
     "/demo-test/6.63887d591f76fb024130.js": "af0c30a33e7ca84257a9d866e554d6f2e6156a78",
     "/demo-test/assets/animal/panda.svg": "bebd302cdc601e0ead3a6d2710acf8753f3d83b1",
     "/demo-test/assets/fill/account-book.svg": "3f5b84c02bfff85f606801a0cdceab6fb603a665",
@@ -1505,10 +1509,12 @@
     "/demo-test/assets/twotone/warning.svg": "ee982b671787446c8b9fc65d3d23b88943dc52ac",
     "/demo-test/es2015-polyfills.8324bb31dd8aa5f2460c.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
     "/demo-test/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/demo-test/index.html": "73388a56bdc19d99e9b796e8d5d03b808e9688d9",
+    "/demo-test/index.html": "072f1f7ebb139c99dc7d36b29220d3e193c340d7",
+    "/demo-test/main.ac68be49a9224530eeff.js": "99083c042ce81a479f875e8e25f34dd808c74953",
     "/demo-test/main.bd8deda330168e32855f.js": "9a5320b25eb68f079d7276199665b9bb956414c0",
     "/demo-test/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/demo-test/runtime.8ef73a02c14626fdc1c3.js": "70cfa6b275791fbec85ae9050a7977e20ea8af52",
+    "/demo-test/runtime.ddd621a4c34e65644841.js": "4a8f57b703dc6465a3633311fbbf9aac1f9e034e",
     "/demo-test/styles.9f36bcce31eb8f2f9d90.css": "9000ac996b0c3c045f7f537c1f84eaefa321da55"
   },
   "navigationUrls": [
