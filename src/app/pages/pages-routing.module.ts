@@ -40,7 +40,7 @@ const routes: Routes = [
   { path: 'styleDemo', component: StyleDemoComponent, data: { animationName: 'styleDemo' } },
   { path: 'operatingDOM', component: OperatingDOMComponent, data: { animationName: 'operatingDOM' } },
   { path: 'dynamicCom', component: DynamicComComponent, data: { animationName: 'dynamicCom' } },
-  { path: 'lazyLoad', loadChildren: './lazy-load/lazy-load.module#LazyLoadModule' },
+  { path: 'lazyLoad', loadChildren: () => import('./lazy-load/lazy-load.module').then(m => m.LazyLoadModule) },
   { path: 'toUpperCom', component: ToUpperComComponent, data: { animationName: 'dynamicCom' } },
   { path: 'copyToClipboard', component: CopyToClipboardComponent, data: { animationName: 'operatingDOM' } },
   { path: 'trafficLight', component: TrafficLightComponent, data: { animationName: 'operatingDOM' } },

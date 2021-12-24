@@ -5,7 +5,7 @@ import {IntroduceComponent} from './introduce/introduce.component';
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'introduce'},
   {path: 'introduce', component: IntroduceComponent},
-  {path: 'pages', loadChildren: './pages/pages.module#PagesModule'}
+  {path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)}
 ];
 
 @NgModule({
