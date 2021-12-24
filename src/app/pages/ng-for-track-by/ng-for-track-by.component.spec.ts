@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { NgForTrackByComponent } from './ng-for-track-by.component';
 
@@ -6,7 +6,7 @@ describe('NgForTrackByComponent', () => {
   let component: NgForTrackByComponent;
   let fixture: ComponentFixture<NgForTrackByComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ NgForTrackByComponent ]
     })

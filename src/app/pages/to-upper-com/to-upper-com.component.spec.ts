@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ToUpperComComponent } from './to-upper-com.component';
 
@@ -6,7 +6,7 @@ describe('ToUpperComComponent', () => {
   let component: ToUpperComComponent;
   let fixture: ComponentFixture<ToUpperComComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ToUpperComComponent ]
     })

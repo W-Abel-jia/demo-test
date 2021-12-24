@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CopyToClipboardComponent } from './copy-to-clipboard.component';
 
@@ -6,7 +6,7 @@ describe('CopyToClipboardComponent', () => {
   let component: CopyToClipboardComponent;
   let fixture: ComponentFixture<CopyToClipboardComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CopyToClipboardComponent ]
     })

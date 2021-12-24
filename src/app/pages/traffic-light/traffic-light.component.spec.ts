@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TrafficLightComponent } from './traffic-light.component';
 
@@ -6,7 +6,7 @@ describe('TrafficLightComponent', () => {
   let component: TrafficLightComponent;
   let fixture: ComponentFixture<TrafficLightComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ TrafficLightComponent ]
     })

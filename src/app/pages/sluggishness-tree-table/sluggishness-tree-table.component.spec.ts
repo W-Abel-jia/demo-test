@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SluggishnessTreeTableComponent } from './sluggishness-tree-table.component';
 
@@ -6,7 +6,7 @@ describe('SluggishnessTreeTableComponent', () => {
   let component: SluggishnessTreeTableComponent;
   let fixture: ComponentFixture<SluggishnessTreeTableComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SluggishnessTreeTableComponent ]
     })
