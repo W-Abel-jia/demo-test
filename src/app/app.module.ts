@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {NgZorroAntdModule, NZ_I18N, zh_CN} from 'ng-zorro-antd';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -14,8 +13,11 @@ import {DemoSiderComponent} from './demo-sider/demo-sider.component';
 import {NameValidatorDirectiveDirective} from './public/directive/name-validator-directive.directive';
 import {DemoInterceptorService} from './public/service/demo-interceptor.service';
 import {ShowdownModule} from 'ngx-showdown';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
+import {NZ_I18N, zh_CN} from 'ng-zorro-antd/i18n';
+import {NzMenuModule} from 'ng-zorro-antd/menu';
+import {NzLayoutModule} from 'ng-zorro-antd/layout';
 
 registerLocaleData(zh);
 
@@ -30,12 +32,13 @@ registerLocaleData(zh);
     ShowdownModule,
     BrowserModule,
     AppRoutingModule,
-    NgZorroAntdModule,
+    NzMenuModule,
+    NzLayoutModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [
     {

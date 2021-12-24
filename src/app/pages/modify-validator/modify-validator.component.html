@@ -14,10 +14,10 @@
     <nz-form-label nzSpan="4" nz-col>name类别</nz-form-label>
     <nz-form-control nzSpan="12" nz-col>
       <input nz-input formControlName="name" name="name" placeholder="请输入name">
-      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      <label *ngIf="validateForm.get('name').dirty
        && validateForm.get('name').hasError('required')">
         必填选择不能为空
-      </nz-form-explain>
+      </label>
     </nz-form-control>
   </nz-form-item>
 
@@ -25,10 +25,10 @@
     <nz-form-label nzSpan="4" nz-col>age类别</nz-form-label>
     <nz-form-control nzSpan="12" nz-col>
       <input nz-input formControlName="age" name="age" placeholder="请输入age">
-      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      <label *ngIf="validateForm.get('age').dirty
        && validateForm.get('age').hasError('required')">
         必填选择不能为空
-      </nz-form-explain>
+      </label>
     </nz-form-control>
   </nz-form-item>
 
@@ -36,10 +36,10 @@
     <nz-form-label nzSpan="4" nz-col>地址类别</nz-form-label>
     <nz-form-control nzSpan="12" nz-col>
       <input nz-input formControlName="address" name="address" placeholder="请输入地址">
-      <nz-form-explain *ngIf="validateForm.get('address').dirty
+      <label *ngIf="validateForm.get('address').dirty
        && validateForm.get('address').hasError('required')">
         必填选择不能为空
-      </nz-form-explain>
+      </label>
     </nz-form-control>
   </nz-form-item>
 

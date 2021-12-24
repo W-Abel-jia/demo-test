@@ -1,7 +1,6 @@
-import {ApplicationRef, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, Validators, FormGroup, FormArray, FormBuilder} from '@angular/forms';
 import {TaskStatus} from '../../task-status.enum';
-import {tryCatch} from 'rxjs/internal-compatibility';
 
 @Component({
   selector: 'app-user-info',

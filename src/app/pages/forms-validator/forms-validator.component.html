@@ -8,15 +8,15 @@
                required minlength="2" maxlength="10" appNameValidatorDirective
                #nameValidate="ngModel"
                [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
-        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.required">
+        <label *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.required">
           必填选项不能为空
-        </nz-form-explain>
-        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.minlength">
+        </label>
+        <label *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.minlength">
           最小长度为2
-        </nz-form-explain>
-        <nz-form-explain *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.nameValidator">
+        </label>
+        <label *ngIf="nameValidate.invalid && nameValidate.dirty && nameValidate.errors.nameValidator">
           只能输入英文、数字、下划线
-        </nz-form-explain>
+        </label>
       </nz-form-control>
     </nz-form-item>
   </form>

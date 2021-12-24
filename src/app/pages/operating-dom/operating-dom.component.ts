@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
-import {NzNotificationService} from 'ng-zorro-antd';
+import {NzNotificationService} from 'ng-zorro-antd/notification';
 
 @Component({
   selector: 'app-operating-dom',

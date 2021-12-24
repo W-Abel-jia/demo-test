@@ -8,21 +8,21 @@
     </nz-form-label>
     <nz-form-control nzSpan="7" nz-col>
       <input nz-input type="text" placeholder="请输入" id="name" name="name" formControlName="name">
-      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      <label *ngIf="validateForm.get('name').dirty
       && validateForm.get('name').hasError('required')">必填项不能为空
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      <label *ngIf="validateForm.get('name').dirty
       && validateForm.get('name').hasError('maxlength')">最大长度32
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      <label *ngIf="validateForm.get('name').dirty
       && validateForm.get('name').hasError('minlength')">最小长度2
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('name').dirty
+      <label *ngIf="validateForm.get('name').dirty
       && validateForm.get('name').hasError('pattern')">只能输入英文或者数字
-      </nz-form-explain>
+      </label>
     </nz-form-control>
   </nz-form-item>
 
@@ -32,21 +32,21 @@
     </nz-form-label>
     <nz-form-control nzSpan="7" nz-col>
       <input nz-input type="text" placeholder="请输入" id="age" name="age" formControlName="age">
-      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      <label *ngIf="validateForm.get('age').dirty
       && validateForm.get('age').hasError('required')">必填项不能为空
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      <label *ngIf="validateForm.get('age').dirty
       && validateForm.get('age').hasError('max')">最大值不能超过100
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      <label *ngIf="validateForm.get('age').dirty
       && validateForm.get('age').hasError('min')">最小值不能小于0
-      </nz-form-explain>
+      </label>
 
-      <nz-form-explain *ngIf="validateForm.get('age').dirty
+      <label *ngIf="validateForm.get('age').dirty
       && validateForm.get('age').hasError('pattern')">只能输入数字
-      </nz-form-explain>
+      </label>
     </nz-form-control>
   </nz-form-item>
 
